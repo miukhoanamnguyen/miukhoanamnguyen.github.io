@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .box {
+            display: flex;
+            line-height: 32px;
+            padding: 5px;
+        }
+
+        .box > div {
+            margin-left: 10px;
+        }
+
+        .box > i {
+            background-color: #2196f39e;
+            border-radius: 50%;
+            padding: 4px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body style="font-family: sans-serif">
+    <div style="position: relative">
+        <div style="background-image: url(./images/background.jpg); height: 180px;">
+            <img style="width: 150px; height: 150px; border-radius: 50%; position: absolute; top: 150px; left: 30px; padding: 3px; background-color: white;"
+                src="./images/profile.jpg">
+        </div>
+        <div style="position: relative; left: 200px; top: 10px">
+            <div style="font-size: 30px; font-weight: bold;">Khoa Nam Nguyen</div>
+            <div>
+                <div style="display: flex; line-height: 24px; margin-top: 10px;">
+                    <img style="width: 24px;height:24px" src="./images/gmail.png" />
+                    <div style="margin-left: 10px">ngkhnam@gmail.com</div>
+                </div>
+                <div style="display: flex; line-height: 24px; margin-top: 10px;">
+                    <img style="width: 24px;height:24px" src="./images/linkedin.png">
+                    <div style="margin-left: 10px">https://www.linkedin.com/in/khoa-nam-nguyen/</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 50px;">
+        <div style="padding-left: 100px;">
+            <ul style="list-style-type: none">
+                <li class="box">
+                    <i class="material-icons">home</i>
+                    <div>Home</div>
+                </li>
+                <li class="box">
+                    <i class="material-icons">person</i>
+                    <div>About me</div>
+                </li>
+                <li class="box">
+                    <i class="material-icons">receipt</i>
+                    <div>Receipt</div>
+                </li>
+                <li class="box">
+                    <i class="material-icons">movie</i>
+                    <div>Movie Review</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
