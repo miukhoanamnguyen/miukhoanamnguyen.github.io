@@ -1,0 +1,62 @@
+body {
+    color: #404040;
+    background-image: url(/images/silverware.jpg);
+    background-attachment: fixed;
+}
+
+.header {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    text-decoration: underline;
+    padding: 0.25em;
+    width: fit-content;
+}
+
+.title {
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;    
+}
+
+.section {
+    font-size: 18pt;
+}
+
+a {
+    color: #A4A400;
+}
+
+.copy-right {
+    width: 100%;
+    text-align: right;
+}
+
+.validator {
+    display: flex;
+    justify-content: right;
+}
+
+.delete-text {
+    text-decoration: line-through;
+}
+
+.quotation {
+    background-color: #FFFFA8;
+}
+
+.bullet {
+    list-style-image: url(/icons/pie_icon.gif);
+}
+
+.header-cover {
+    display: flex;
+    justify-content: center;
+}
+
+.comment {
+    margin-left: 20px; 
+    background-color: rgb(252, 252, 138);
+    width: fit-content;
+    padding-right: 20px;
+    font-style: italic;
+}
