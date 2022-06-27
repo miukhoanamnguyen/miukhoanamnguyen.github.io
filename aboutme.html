@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About me</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./css/styleme.css" rel="stylesheet" />
+    <style>
+        .page {
+            background-color: wheat;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0px;
+            height: 100vh;
+            padding: 0px;
+        }
+
+        .page>div {
+            margin: 5px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .drop-cap {
+            line-height: 40px;
+            font-size: 50px;
+            float: left;
+            padding: 5px;
+        }
+
+        li > a {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="page">
+    <div>
+        <h1>About Khoa Nam Nguyen</h1>
+        <p>My name is Khoa Nam and I like reading story, watching movies and play video game</p>
+        <hr style="border-color: black;">
+    </div>
+    <div style="flex-grow: 1">
+        <h3>My Classese This Quater</h3>
+        <ul>
+            <li>ASD: Advance Software Architect</li>
+            <li>SA: Software Architect</li>
+            <li>WAA: Web Application Architect</li>
+            <li>WAP: Web Application Program</li>
+        </ul>
+        <h3>My Favorite Movies</h3>
+        <ol>
+            <li>Spider Man 1 <a href="https://www.imdb.com/title/tt0145487/?ref_=fn_al_tt_1">(IMDB)</a></li>
+            <li>Spider Man 2 <a href="https://www.imdb.com/title/tt0316654/?ref_=fn_al_tt_4">(IMDB)</a></li>
+            <li>Doctor Strange <a href="https://www.imdb.com/title/tt1211837/?ref_=nv_sr_srsg_3">(IMDB)</a></li>
+            <li>Doctor Strange in the Multiverse of Madness <a
+                    href="https://www.imdb.com/title/tt9419884/?ref_=nv_sr_srsg_0">(IMDB)</a>
+                <ul style="list-style-type: none">
+                    <li><b style="color: rgb(59, 87, 3); font-style: italic">Genre</b>
+                        <ul style="list-style-type: none">
+                            <li>Action</li>
+                            <li>Advanture</li>
+                            <li>Fantasy</li>
+                        </ul>
+                    </li>
+                    <li><b style="color: rgb(59, 87, 3); font-style: italic">Director</b>
+                        <ul style="list-style-type: none">
+                            <li>Scott Derrickson</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Iron man 1 <a href="https://www.imdb.com/title/tt0371746/?ref_=nv_sr_srsg_0">(IMDB)</a></li>
+            <li>Iron man 2 <a href="https://www.imdb.com/title/tt1228705/?ref_=nv_sr_srsg_0">(IMDB)</a></li>
+        </ol>
+        <h3>My Mood</h3>
+        <div style="display: flex">
+            <div style="width: 300px">
+                <div style="width: 200px">Happy</div>
+                <img alt="Happy" style="width: 300px;height:300px"
+                    src="https://treesflowersbirds.files.wordpress.com/2012/06/happy.jpg?w=1400&h=9999">
+            </div>
+            <div style="width: 300px; margin-left: 10px;">
+                <div style="width: 200px">Sad</div>
+                <img alt="Sad" style="width: 300px;height:300px"
+                    src="https://i0.wp.com/oyaschool.com/wp-content/uploads/2019/03/Sad-face.jpg?w=600&ssl=1">
+            </div>
+        </div>
+        <h3>Fun Fact About My Neighbor</h3>
+        <ul>
+            <li><i style="font-weight: bold"><span class="drop-cap">T</span><span>rang</span></i>: The man is <b>not in
+                    lucky</b></li>
+            <li style="list-style-type: none"><i style="font-weight: bold">Thong</i>: The man is very <b>long hair</b>
+            </li>
+            <li style="list-style-type: none"><i style="font-weight: bold">Nhan</i>: The man like the <b>monk</b>, just
+                stay home and don't go any
+                where
+            </li>
+        </ul>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <a href="http://validator.w3.org/check/referer" onclick="this.href='http://validator.w3.org/check?uri=' + 
+document.URL"> <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator" /></a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" onclick="this.href='http://validator.w3.org/check?uri=' + 
+document.URL"> <img src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png" alt="css validator" /></a>
+    </div>
+</body>
+
+</html>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>WAP</title>
+    <title>Home</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         .box {
@@ -22,10 +22,23 @@
             padding: 4px;
             color: white;
         }
+
+        .page {
+            background-color: wheat;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0px;
+            height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+        }
     </style>
 </head>
 
-<body style="font-family: sans-serif; display: flex; flex-direction: column; margin: 0px; height: 100vh;">
+<body class="page">
     <div style="position: relative">
         <div style="background-image: url(./images/background.jpg); height: 180px;">
             <img alt="profile"
@@ -55,7 +68,7 @@
                 </li>
                 <li class="box">
                     <i class="material-icons">person</i>
-                    <div>About me</div>
+                    <a href="/aboutme.html">About me</a>
                 </li>
                 <li class="box">
                     <i class="material-icons">receipt</i>
