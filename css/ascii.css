@@ -45,4 +45,6 @@ select{
 #validate{
     right:0px;
     position: fixed;
+    display: flex;
+    flex-direction: column;
 }
