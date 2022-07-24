@@ -16,21 +16,13 @@ const isVowel = (ch) => {
     return false;
 }
 
-const sum = (arr) => {
-    return arr.reduce((prev, current) => prev + current);
-}
+const sum = (arr) => arr.reduce((prev, current) => prev + current);
 
 const multiply = (arr) => {
     return arr.reduce((prev, current) => prev * current);
 }
 
-const reverse = (str) => {
-    let result = "";
-    for (let i = str.length - 1; i >= 0; i--) {
-        result += str.charAt(i);
-    }
-    return result;
-}
+const reverse = (str) => str.split('').reduce((pre, curr) => curr + pre, '');
 
 const findLongestWord = (words) => {
     let longestWord = "";
