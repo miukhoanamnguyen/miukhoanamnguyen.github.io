@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <style>
+      .posts {
+        background-color: rgb(224, 213, 213);
+        padding: 10px;
+      }
+      .comments {
+        padding: 20px;
+      }
+    </style>
+    <script src="/js/jquery.min.js"></script>
+    <script>
+      const onClickViewComments = (postId) => {
+        $.ajax({url: `https://jsonplaceholder.typicode.com/comments?postId=${postId}`}).then(data => {
+          const html = data.map(({name, email, body}) => `<div>
+              <div>Name: ${name}</div>
+              <div>Email: ${email}</div>
+              <div>${body}</div>
+            </div><br/>`).join('');
+            $(`#post-${postId} > button`).hide();
+            $(`#comments-${postId}`).show()
+            document.getElementById(`comments-${postId}`).innerHTML = html;
+        });
+        
+      };
+      const onClick = () => {
+        const id = document.getElementById('userId').value;
+        $.ajax({url: `https://jsonplaceholder.typicode.com/users/${id}`}).then(({username, email, address}) => {
+            const html = `<div>Username: ${username}</div>
+                          <div>Email: ${email}</div>
+                          <div>Address: ${address.street} ${address.suite}, ${address.city}, ${address.zipcode}       
+            `;
+            document.getElementById('user').innerHTML = html;
+        });
+        $.ajax({url: `https://jsonplaceholder.typicode.com/posts?userId=${id}`}).then(data => {
+          const html = data.map(({title, body, id}) => `<div class="posts" id="post-${id}">
+              <div>${title}</div>
+              <div>${body}</div>
+              <button onclick="onClickViewComments(${id})">View Comments</button>
+              <div class="comments" id="comments-${id}"></div>
+            </div><br/>`).join('');
+            document.getElementById('post').innerHTML = html;
+        });
+        
+      };
+    </script>
+  </head>
+  <body>
+    <div>
+      <input type="text" style="width: 30px;" id="userId" />
+      <button onclick="onClick()">View Posts</button>
+    </div>
+    <div id="user"></div>
+    <div id="post"></div>
+  </body>
+</html>
